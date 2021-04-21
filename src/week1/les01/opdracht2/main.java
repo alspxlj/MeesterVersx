@@ -1,8 +1,8 @@
 package week1.les01.opdracht2;
 
 public class main {
-	static klant klant_1;
-	static klant klant_2;
+	klant klant_1;
+	klant klant_2;
 			
 	public static void main(String[] args) {
 		klant klant_1 = new klant("Steven", "Vistraat", "Utrecht");

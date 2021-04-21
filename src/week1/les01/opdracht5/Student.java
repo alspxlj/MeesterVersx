@@ -15,11 +15,11 @@ public class Student {
 	}
 
 	public String getNaam(){
-		return naam;
+		return this.naam;
 	}
 
 	public int getStudentNummer(){
-		return studentNummer;
+		return this.studentNummer;
 	}
 
 	public void setStudentNummer(int studentNummer){

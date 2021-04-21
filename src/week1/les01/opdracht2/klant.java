@@ -13,15 +13,15 @@ public class klant {
 	}
 	
 	public String getNaam() {
-		return naam;
+		return this.naam;
 	}
 	
 	public String getAdres() {
-		return adres;
+		return this.adres;
 	}
 	
 	public String getPlaats() {
-		return plaats;
+		return this.plaats;
 	}
 
 	public void setAdres(String adres){

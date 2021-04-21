@@ -10,7 +10,8 @@ public class Main {
 		System.out.println();
 
 		Piloot p2 = new Piloot("Leonardo di Caprio"); 
-		p2.setSalaris(5000.00); p2.verhoogVliegurenMet(3); 
+		p2.setSalaris(5000.00); 
+		p2.verhoogVliegurenMet(3); 
 		System.out.println("Vlieguren van tweede piloot: "+ p2.getVlieguren()); 
 		System.out.println("Salaris van tweede piloot: " + p2.getSalaris()); 
 		System.out.println("Tweede piloot: " + p2); 

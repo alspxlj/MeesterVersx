@@ -5,6 +5,7 @@ public class Voetbalclub {
 	int aantalGewonnen;
 	int aantalVerloren;
 	int aantalGelijk;
+	int totalePunten;
 	char ch;
 
 	public Voetbalclub(String clubNaam){
@@ -40,9 +41,16 @@ public class Voetbalclub {
 	}
 
 	public void verwerkResultaat(char ch) { 
-		if (ch == 'w') aantalGewonnen = aantalGewonnen + 1; 
-		if (ch == 'g') aantalGelijk = aantalGelijk + 1; 
-		if (ch == 'v') aantalVerloren = aantalVerloren + 1; 
+		if (ch == 'w') {
+			aantalGewonnen = aantalGewonnen + 1;
+			}
+		if (ch == 'g') {
+			aantalGelijk = aantalGelijk + 1;
+			}
+		
+		if (ch == 'v') { 
+			aantalVerloren = aantalVerloren + 1; 
+			} 
 	}
 
 	public int aantalGespeeld(){
@@ -53,7 +61,11 @@ public class Voetbalclub {
 	public int aantalPunten(){
 		int gewonnenPunten = aantalGewonnen * 3;
 		int gelijkPunten = aantalGelijk * 1;
-		int totalePunten = gewonnenPunten + gelijkPunten;
+		totalePunten = totalePunten + gewonnenPunten + gelijkPunten;
 		return totalePunten;
+	}
+
+	public String toString(){
+		String Voetbalclub = clubNaam +" " + 
 	}
 }
