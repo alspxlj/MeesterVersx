@@ -1,9 +1,9 @@
 package week1.les02.practicum1;
 
 public class Zwembad {
-	double breedte;
-	double lengte;
-	double diepte;
+	private double breedte;
+	private double lengte;
+	private double diepte;
 
 	public Zwembad(double breedte, double lengte, double diepte){
 		this.breedte = breedte;

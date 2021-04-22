@@ -1,9 +1,9 @@
 package week1.les02.opdracht1;
 
 public class Piloot{
-	String naam;
-	double salaris;
-	int vlieguren;
+	private String naam;
+	private double salaris;
+	private int vlieguren;
 
 	public Piloot(String naam){
 		this.naam = naam;

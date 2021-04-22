@@ -1,12 +1,13 @@
 package week1.les02.practicum2;
 
 public class Voetbalclub {
-	String clubNaam;
-	int aantalGewonnen;
-	int aantalVerloren;
-	int aantalGelijk;
-	int totalePunten;
-	char ch;
+	private String clubNaam;
+	private int aantalGewonnen;
+	private int aantalVerloren;
+	private int aantalGelijk;
+	private int totaleGespeeldeWedstrijden;
+	private int totalePunten;
+	private char ch;
 
 	public Voetbalclub(String clubNaam){
 		this.clubNaam = clubNaam;
@@ -66,6 +67,7 @@ public class Voetbalclub {
 	}
 
 	public String toString(){
-		String Voetbalclub = clubNaam +" " + 
+		String Voetbalclub = clubNaam +"   " + totaleGespeeldeWedstrijden +"      " + aantalGewonnen + "   " + aantalGelijk + "   " + aantalVerloren + "     " + totalePunten;
+		return Voetbalclub;
 	}
 }
