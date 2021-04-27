@@ -1,4 +1,4 @@
-package week2.les01.voorbeeld1;
+package week2.les03.voorbeeld1;
 
 public class Rekening {
 	private int nummer;

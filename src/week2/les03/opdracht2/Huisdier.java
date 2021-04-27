@@ -1,4 +1,4 @@
-package week2.les02.opdracht5;
+package week2.les03.opdracht2;
 
 public class Huisdier {
 	private String naam; 
@@ -20,6 +20,6 @@ public class Huisdier {
 	}
 
 	public String toString() {
-		return naam + ", de " + ras + ", weegt " + gewicht + " kg. \n"; 
+		return naam + ", de " + ras + ", weegt " + gewicht + " kg."; 
 	} 
 }

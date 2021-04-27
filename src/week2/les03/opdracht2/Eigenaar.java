@@ -1,4 +1,4 @@
-package week2.les01.opdracht2;
+package week2.les03.opdracht2;
 
 public class Eigenaar { 
 	private String naam; 

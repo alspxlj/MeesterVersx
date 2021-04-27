@@ -1,4 +1,4 @@
-package week2.les02.opdracht4;
+package week2.les04.opdracht5;
 
 public class Huisdier {
 	private String naam; 
@@ -19,15 +19,7 @@ public class Huisdier {
 		return ras;
 	}
 
-	public double getGewitcht(){
-		return gewicht;
-	}
-
-	public void setGewicht(double gewicht){
-		this.gewicht = gewicht;
-	}
-
 	public String toString() {
-		return naam + ", de " + ras + ", weegt " + gewicht + " kg."; 
+		return naam + ", de " + ras + ", weegt " + gewicht + " kg. \n"; 
 	} 
 }

@@ -1,4 +1,4 @@
-package week2.les01.opdracht1;
+package week2.les03.opdracht1;
 
 public class Main {
 	public static void main(String[] arg) {

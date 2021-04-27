@@ -1,9 +1,10 @@
-package week2.les01.opdracht2;
+package week2.les03.opdracht1;
 
 public class Huisdier {
 	private String naam; 
 	private String ras; 
 	private double gewicht;
+	private Eigenaar baasje; 
 
 	public Huisdier(String nm, String r) {
 		naam = nm; 
@@ -11,12 +12,12 @@ public class Huisdier {
 		gewicht = 0.0; 
 	}
 
-	public String getNaam(){
-		return naam;
+	public Eigenaar getBaasje() {
+		return baasje;
 	}
 
-	public String getRas(){
-		return ras;
+	public void setBaasje(Eigenaar baas){
+		baasje = baas;
 	}
 
 	public String toString() {
