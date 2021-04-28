@@ -1,0 +1,13 @@
+Gebouw g;
+Huis h = new Huis(10, 7, 2);
+g = h;
+g.laatsteRenovatie = 1985; binnenrenovatie =
+buitenrenovatie =
+h.laatsteRenovatie = 1990; binnenrenovatie =
+buitenrenovatie =
+((Huis)g).laatsteRenovatie = 1995;
+binnenrenovatie =
+buitenrenovatie =
+h.renoveer(2000, 2005); binnenrenovatie =
+buitenrenovatie =
+g.isGeisoleerd = true; wel / niet toegestaan
