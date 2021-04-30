@@ -1,7 +1,7 @@
-package week3.les06.practicum2;
+package week3.les06.practicum3;
 import java.util.*;
-import java.math.RoundingMode;
 import java.text.DecimalFormat;
+//import java.math.RoundingMode;
 
 public class Persoon {
 	private String naam;
@@ -17,7 +17,7 @@ public class Persoon {
 	public boolean koop(Game g){
 		boolean komtGameVoor = false;
 		DecimalFormat tweeDecimaal = new DecimalFormat("#.00");
-		tweeDecimaal.setRoundingMode(RoundingMode.HALF_UP);
+//		tweeDecimaal.setRoundingMode(RoundingMode.HALF_UP);
 		
 		for(Game game : mijnGames){
 			if(game.equals(g) == true){
@@ -39,7 +39,7 @@ public class Persoon {
 		boolean komtGameVoorVerkoper = false;
 		boolean komtGameVoorKoper = false;
 		DecimalFormat tweeDecimaal = new DecimalFormat("#.00");
-		tweeDecimaal.setRoundingMode(RoundingMode.HALF_UP);
+//		tweeDecimaal.setRoundingMode(RoundingMode.HALF_UP);
 		
 		for(Game game : mijnGames){
 			if(game.equals(g) == true){
@@ -60,6 +60,7 @@ public class Persoon {
 				return false;
 			}else{
 				koper.mijnGames.add(g);
+				mijnGames.remove(g);
 
 				budget = Double.parseDouble(tweeDecimaal.format(budget + g.huidigeWaarde()));
 				koper.budget = Double.parseDouble(tweeDecimaal.format(koper.budget - g.huidigeWaarde()));
@@ -68,6 +69,20 @@ public class Persoon {
 		}else{
 			return false;
 		}
+	}
+
+	public Game zoekGameOpNaam(String gameNaam){
+		Game message = null;
+		
+		for(Game game : mijnGames){
+			if(game.getNaam().equals(gameNaam)){
+				 message = game;
+				 break;
+			}else{
+				message = null;
+			}
+		}
+		return message;
 	}
 
 	public String toString(){

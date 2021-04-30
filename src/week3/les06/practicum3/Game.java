@@ -1,7 +1,7 @@
-package week3.les06.practicum2;
+package week3.les06.practicum3;
 import java.time.LocalDate;
-import java.math.RoundingMode;
 import java.text.DecimalFormat;
+//import java.math.RoundingMode;
 
 public class Game {
 	private String naam;
@@ -23,7 +23,7 @@ public class Game {
 		int leeftijd = (huidigeJaar - releaseJaar);
 		double prijs = nieuwprijs;
 		DecimalFormat tweeDecimaal = new DecimalFormat("#.00");
-		tweeDecimaal.setRoundingMode(RoundingMode.HALF_UP);
+//		tweeDecimaal.setRoundingMode(RoundingMode.HALF_UP);
 
 		for(int i=1; i<=leeftijd; i++){
 			prijs = Double.parseDouble(tweeDecimaal.format(prijs - ((prijs / 100) * 30)));
