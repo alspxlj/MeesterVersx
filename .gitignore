@@ -1,6 +1,7 @@
 .idea/
 .classpath
 .project
+.metadata
 .settings/
 bin/
 .zip

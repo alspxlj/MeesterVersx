@@ -6,6 +6,7 @@ This repo contains all the programs and models that a Software - information eng
 ## Getting Started
 
 There's not much needed to get the project setup, it's a basic Eplicse  JAVA project.
+I only added the src of the project.
 
 ## Built With
 
