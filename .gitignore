@@ -1,8 +1,7 @@
 .idea/
-.classpath
-.project
-.metadata
+.metadata/
 .settings/
 bin/
-.zip
+.classpath
+.project
 Thumbs.db
