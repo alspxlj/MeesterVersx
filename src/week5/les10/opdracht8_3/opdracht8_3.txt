@@ -1,0 +1,25 @@
+1. Met welke opdracht start je een JavaFX applicatie altijd? public void start(Stage primaryStage){}.
+
+2. Wat is het verschil tussen een Stage en een Scene object? een scene is een child van de stage .
+
+3. Welk object moet je zelf aanmaken, een Stage of een Scene? scene.
+
+4. Welke klasse moet elk JavaFX programma extenden? Application.
+
+5. Welke methode moet elke JavaFX applicatie te hebben? start().
+
+6. Hoe komt het dat een applicatie anders niet gecompileerd kan worden? het zijn benodigdheden, het mist adners een onderdeel.
+
+7. Met welke methode kan je jouw applicatie zichtbaar maken? in de main.
+
+8. Welke interface gebruik je om onder andere gebruikersinvoer af te vangen? textfield.
+
+9. Wat is de naam van de methode om een item in een StackPane bovenop te plaatsen? stackpane().
+
+10. Hoeveel constructors heeft HBox om de afstand tussen items in een box in te stellen? 1.
+
+11. Met welke methode kan je de afstand tussen items in een HBox naderhand nog wijzigen? paddding.
+
+12. Met welke methode stel je in één keer de breedte en hoogte van je labels en buttons in? width().
+
+13. Hoe voeg je child-elementen toe aan bijvoorbeeld een FlowPane? En hoe aan een HBox? flowpane.getChildren().add(button1) en HBox hbox = new HBox(button1, button2);.

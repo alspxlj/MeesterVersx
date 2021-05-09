@@ -1,7 +1,2 @@
+test/
 .idea/
-.metadata/
-.settings/
-bin/
-.classpath
-.project
-Thumbs.db

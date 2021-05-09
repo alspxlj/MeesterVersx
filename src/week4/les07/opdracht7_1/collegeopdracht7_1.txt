@@ -1,0 +1,32 @@
+Gebouw g;
+Huis h = new Huis(10, 7, 1);
+
+a) g = h; wel
+b) g = new Huis(); wel 
+c) h = g; wel 
+d) h = (Huis)g; niet toegestaan
+e) if (g instanceof Huis) h = (Huis)g; wel 
+f) h.super.laatsteRenovatie = 1980; wel 
+
+
+------------------------------------------------------------------------------------------------------------------
+Gebouw g;
+Huis h = new Huis(10, 7, 2);
+g = h;
+
+g.laatsteRenovatie = 1985; binnenrenovatie
+h.laatsteRenovatie = 1990; buitenrenovatie 
+((Huis)g).laatsteRenovatie = 1995 binnenrenovatie
+h.renoveer(2000, 2005); binnenrenovatie
+g.isGeisoleerd = true; wel
+
+------------------------------------------------------------------------------------------------------------------
+
+Gebouw g;
+Huis h = new Huis(10, 7, 3);
+g = h;
+
+l) h.berekenHuur(); roept methode van klasse "Gebouw" aan
+m) g.berekenHuur(); roept methode van klasse "Gebouw" aan
+n) g.isoleer(); wel
+o) ((Huis)g).isoleer();

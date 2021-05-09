@@ -1,0 +1,25 @@
+1. s1= route66
+s2= 66route
+
+2. s3 = "concert" + "piano";
+s4 = "concertpiano";
+Betekent: s3 == s4 hetzelfde als: s3.equals(s4). Nee, omdat bij s3 het woord gesplitst is.
+
+3. Hoe vraag je de lengte op van een string?
+“String”.length();
+Is dat inclusief eventuele spaties en/of leestekens? Nee.
+
+4. De vierde letter is een c in: s4 = "concertpiano";
+Met welke methode / code kun je een letter op een bepaalde positie achterhalen volgens
+de documentatie van klasse String?
+charAt()
+
+5. In het woordenboek komt "boom" voor "roos". Met welke methode kun je controleren
+welke van 2 strings lexicografisch eerder of later komt dan de andere?
+compareTo(String)
+
+6. Ingelezen waarden zijn doorgaans strings. Wat is de code om een string om te zetten naar
+een int? 
+System.out.println((int)”string”);
+En wat is de code om een string om te zetten naar een double?
+System.out.println((double)”string”);

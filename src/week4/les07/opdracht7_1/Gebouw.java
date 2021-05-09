@@ -7,7 +7,6 @@ public class Gebouw {
 	public int laatsteRenovatie; //buiten
 
 	public Gebouw(){
-
 	} 
 
 	public Gebouw(int l, int b, int aV){
@@ -17,21 +16,21 @@ public class Gebouw {
 	}
 
 	public int oppervlakte(){
-		int oppervlakte = 0;
+		int oppervlakte = lengte * breedte;
 		return oppervlakte;
 	}
 
 	public void renoveer(int jaarBuiten){
-		int jaarBuiten = 0;
+		laatsteRenovatie = jaarBuiten;
 	}
 
 	public int brekenHuur(){
-		int huur = 0;
+		int huur = oppervlakte() * 75;
 		return huur;
 	}
 
 	public String toString(){
-		String message = "Lengte " +lengte+ " breedte " +breedte+ " aantalVerdiepingen " + aantalVerdiepingen;
+		String message = "Lengte " +lengte+ " breedte " +breedte+ " Oppervlakte "+oppervlakte()+ " aantalVerdiepingen " + aantalVerdiepingen + " laatste renovatie buiten: " +laatsteRenovatie;
 		return message;
 	}
 }
